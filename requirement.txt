@@ -1,0 +1,5 @@
+python=python_3.9
+streamlit=streamlit
+fastapi="fastapi[all]"
+pandas=pandas
+numpy=numpy
