@@ -3,3 +3,4 @@ streamlit=streamlit
 fastapi="fastapi[all]"
 pandas=pandas
 numpy=numpy
+python-multipart=0.0.5

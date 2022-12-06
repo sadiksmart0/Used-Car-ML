@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./src/validator",
+        "./src/ivalidator"
+    ],
+    "python.analysis.typeCheckingMode": "off"
+}
