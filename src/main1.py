@@ -19,12 +19,12 @@ import datetime
 class Test(BaseModel):
     hey: str
 
-# BaseModel for searching criteria passed from streamlit
+########### BaseModel for searching criteria passed from streamlit ##################
 class Search(BaseModel):
     years: int
     
 
-# # ===================================Declaring FASTAPI============================================
+# #####################   Declaring FASTAPI ##########################################
 
 # FastApi declaration
 app = FastAPI(title='Used Car Price Predictions', version='1.0',
@@ -32,7 +32,7 @@ app = FastAPI(title='Used Car Price Predictions', version='1.0',
 
 
 
-# ===================================Validating File ============================================
+#######################  Validating File ##############################################
 class Data(BaseModel):
     onRoadOld: int
     onRoadNow: int
@@ -52,7 +52,7 @@ class Data(BaseModel):
         return v
 
 
-# # ===================================File Prediction============================================
+########################## File Prediction   ################################################
 
 
 def predict(data):

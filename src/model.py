@@ -10,12 +10,10 @@ from sklearn.impute import SimpleImputer
 
 COLS = ['onRoadOld', 'onRoadNow', 'years', 'km', 'rating', 'condition', 'economy', 'topSpeed',
             'horsePower', 'torque']
-'''===============================Data Preparation and Train model====================================='''
 
-"""
-input: path for the data set 
-return the raw DataFrame
-"""
+############################   Data Preparation and Train model ###############################
+
+
 def load_data(url = '../dataset/train_df.csv'):
     try:
         data = pd.read_csv(url)
@@ -49,13 +47,7 @@ def get_model(X : pd.DataFrame, y: pd.Series):
     joblib.dump(lr, 'models/lr_model.joblib')
     return lr
 
-
-"""
-Train a new model
-input: path for the data set 
-Prepare the data and train the linear regression model with the data
-return the trained model result
-"""
+########################  Train  model  ########################################
 def train_model():
     # Load data
     df = load_data()
@@ -77,12 +69,7 @@ def train_model():
     return lr
 
 
-"""
-Re_train a model
-input: path for the data set 
-Prepare the data and train the linear regression model with the data
-return the trained model result
-"""
+####################  RETRAIN MODEL  ############################################
 def retrain_model(path : str):
     # Load data
     df = load_data(path)
@@ -102,7 +89,7 @@ def retrain_model(path : str):
 
     return lr
 
-'''===============================inference process====================================='''
+##################   inference process       ##########################################
 
 # transform the X DataFrame with trained scaler
 def scaler_transform(X: pd.DataFrame):
@@ -115,14 +102,8 @@ def imputer_transform(X: pd.DataFrame):
     X_imputed = pd.DataFrame(imputer.transform(X), columns=X.columns)
     return X_imputed
 
-
-'''
-Input: raw DataFrame, 
-preprocessing the data, fill up null value with saved median value if neccessary, scale the data with saved scaler
-Output: prediction result for car price
-'''
+##################   RUN PREDICTION      ##################################################
 def make_predict(X: pd.DataFrame):
-
     X = imputer_transform(X)
     X_ss = scaler_transform(X)
     lr = joblib.load('models/lr_model.joblib')
@@ -131,10 +112,8 @@ def make_predict(X: pd.DataFrame):
     return y_pred
 
 
-'''=============================================Data Ingestion=================================================='''
-'''
-check if the one sample data set has correct form for ML model
-'''
+###############################   Data Validation   ###########################################
+
 def data_verification(df : pd.DataFrame):
     # check if the dataframe has shape of 1 row and 10 columns, and columns name are as required
     if (df.shape != (1,10)) | (sorted(df.columns.to_list) != sorted(COLS)):
