@@ -1,17 +1,13 @@
-
 from fastapi import FastAPI
 import pandas as pd
 import uvicorn
 from pydantic import BaseModel, validator
-from typing import List, Optional
 import numpy as np
 from fastapi import File, UploadFile
-from io import StringIO
 from io import BytesIO
 import model
 from database import write_to_database
 from database import get_from_database
-import json
 import datetime
 
 
