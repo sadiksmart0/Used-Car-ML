@@ -47,7 +47,7 @@ def ingest_data():
 
     #################  INGESTION JOB  ####################
     @task
-    def get_data_to_ingest_from_local_file(link) -> pd.DataFrame:
+    def get_data_to_ingest_froma_local_file(link) -> pd.DataFrame:
         files = list(Path(directory).glob('*.csv'))
         file = random.sample(files, 1)
         input_data_df = pd.read_csv(file[0])
