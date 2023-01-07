@@ -6,7 +6,7 @@ from fastapi.encoders import jsonable_encoder
 from fastapi import File, UploadFile
 from io import StringIO
 from csv import reader
-
+import json
 
 # Page Headers
 st.text('Dont Know how much your next car would cost? ')
@@ -50,8 +50,8 @@ with tab1:
             # On submit event for user input
             if submitted:
                 response = requests.post("http://127.0.0.1:8000/user_input", json=data)
-                prediction = response.text
-                st.success('The car may likely cost  {} '.format(prediction))
+                prediction = pd.DataFrame(json.loads(response.text))
+                st.success(f'The car may likely cost = {prediction.iloc[0]["result"]}')
                 st.balloons()
 
 with tab2:
