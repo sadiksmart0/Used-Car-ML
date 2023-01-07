@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/A.M.%20MUKTAR/Used-Car-ML/mlruns/859332054298389914/35e480036a25412b82193c04001a911a/artifacts
+end_time: 1673129433144
+entry_point_name: ''
+experiment_id: '859332054298389914'
+lifecycle_stage: active
+run_id: 35e480036a25412b82193c04001a911a
+run_name: model_2023-01-07, 23:10:22
+run_uuid: 35e480036a25412b82193c04001a911a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1673129422824
+status: 3
+tags: []
+user_id: AMMUKTAR

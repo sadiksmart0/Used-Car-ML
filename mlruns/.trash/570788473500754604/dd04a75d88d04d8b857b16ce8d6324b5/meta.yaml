@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/A.M.%20MUKTAR/Used-Car-ML/mlruns/570788473500754604/dd04a75d88d04d8b857b16ce8d6324b5/artifacts
+deleted_time: 1673098384197
+end_time: 1673098060762
+entry_point_name: ''
+experiment_id: '570788473500754604'
+lifecycle_stage: deleted
+run_id: dd04a75d88d04d8b857b16ce8d6324b5
+run_name: rebellious-slug-526
+run_uuid: dd04a75d88d04d8b857b16ce8d6324b5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1673098060512
+status: 3
+tags: []
+user_id: AMMUKTAR

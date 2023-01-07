@@ -1,4 +1,4 @@
-,on road old,on road now,years,km,rating,condition,economy,top speed,hp,torque,current price
+,onRoadOld,onRoadNow,years,km,rating,condition,economy,topSpeed,horsePower,torque,price
 335,525901,756923,7,116289,1,5,14,145,88,89,169674.5
 13,539406,891627,6,86704,1,7,15,175,118,107,373529.0
 911,533969,825531,4,113637,2,6,14,162,118,87,228875.5

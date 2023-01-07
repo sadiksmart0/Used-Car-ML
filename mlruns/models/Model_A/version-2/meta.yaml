@@ -1,0 +1,12 @@
+creation_timestamp: 1673105459420
+current_stage: Production
+description: null
+last_updated_timestamp: 1673111593762
+name: Model_A
+run_id: null
+run_link: null
+source: file:///C:/Users/A.M.%20MUKTAR/Used-Car-ML/mlruns/206645484691887143/02ea4ed0113c40e3b60198c3b403bdd1/artifacts/model
+status: READY
+status_message: null
+user_id: null
+version: 2

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/A.M.%20MUKTAR/Used-Car-ML/mlruns/473412279443876824/512c9e5b0d0745de8d94a68e239895c0/artifacts
+end_time: 1673099131617
+entry_point_name: ''
+experiment_id: '473412279443876824'
+lifecycle_stage: active
+run_id: 512c9e5b0d0745de8d94a68e239895c0
+run_name: bedecked-rook-691
+run_uuid: 512c9e5b0d0745de8d94a68e239895c0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1673099123227
+status: 3
+tags: []
+user_id: AMMUKTAR

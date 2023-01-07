@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/A.M.%20MUKTAR/Used-Car-ML/mlruns/570788473500754604/a18948247acb4aae9d9d274dae6201d3/artifacts
+deleted_time: 1673098384287
+end_time: 1673090090809
+entry_point_name: ''
+experiment_id: '570788473500754604'
+lifecycle_stage: deleted
+run_id: a18948247acb4aae9d9d274dae6201d3
+run_name: selective-newt-855
+run_uuid: a18948247acb4aae9d9d274dae6201d3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1673090082689
+status: 3
+tags: []
+user_id: AMMUKTAR
